@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Acompanhante</title>
+    <link rel="stylesheet" href="../assets/css/cadastro.css">
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <script defer src="../assets/js/hamburger.js"></script>
+    <script defer src="../assets/js/acordeon.js"></script>
+    <script defer src="../assets/js/acessibilidade.js"></script>
+    <script defer src="../assets/js/darkmode.js"></script>
+    <script defer src="../assets/js/tamanho-fonte.js"></script>
+
+</head>
+
+<body>
+
+    <!--Começo cabeçalho-->
+    <header>
+        
+        <nav class="nav">
+            <a href="./principal-page.html">
+                <img class="logo" src="../assets/Icones_projeto/24.svg" alt="logo aqui">
+            </a>
+            <ul class="nav-list">
+                <li><a href="../html/principal-page.html">Inicio</a></li>
+                <li><a href="sobre-nos.html">Quem Somos</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a id="Entrar" href="../html/login.html">Entrar</a></li>
+            </ul>
+
+
+            <div class="nav-direita">
+                <ul class="nav-list-direita">
+                    <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                            <img class="img-accessibilidade" src="../assets/Icones_projeto/14.png"
+                                alt="Acessibilidade">
+                        </button></li>
+                    <button class="hamburger">
+                        <img class="img-hamburger" src="../src/assets/Icones_projeto/12.png" alt="">
+                    </button>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!--Fim parte superior da página-->
+
+    <!--------------------------Começo Menu flutuante------------------->
+
+    <span class="menu-acessibilidade">
+        <div class="botoes-acessibilidade-menu">
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">MODO ESCURO</div>
+                <div class="btn-modo-dark">
+                    <input type="checkbox" name="darkmode" id="darkmode">
+                    <label id="darktg" for="darkmode"></label>
+                </div>
+
+            </div>
+
+        </div>
+    </span>
+    <input type="range" id="tamanhoTexto" min="10" max="32" value="16">
+
+    <!--começa corpo-->
+
+    <main>
+        <div class="container">
+            <div id="box-cadastro">
+                <section class="cadastro">
+                    <h1>Cadastrar usuário</h1>
+                    <form action="#">
+                        <div class="campo">
+                            <input placeholder="Nome" type="text" id="nome" name="nome" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="E-mail" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="Senha" type="password" id="senha" name="senha" required>
+                        </div>
+                        <div class="campo">
+                            <input placeholder="Confirmar Senha" type="password" id="confirmarSenha"
+                                name="confirmarSenha" required>
+                        </div>
+                        <div class="botoes">
+                            <button class="voltar-button" type="button"><a class="abutton-cadastro"
+                                    href="/src/login-Matheus.html">Voltar</a></button>
+                            <button class="cadastrar-button" type="submit">Cadastrar</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+
+
+        <!--imagem box direito-->
+        <div id="box-img">
+            <img id="editar-box-img" src="/src/assets/imagem_cadastro/24.png" alt="logo" title="logo acompanhate">
+        </div>
+    </main>
+
+</body>
+
+</html>

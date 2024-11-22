@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../src/assets/Icones_projeto/27.png">
+    <title>Meu Acommpanhante Seguro</title>
+
+
+    <link rel="stylesheet" href="../assets/css/page-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script defer src="../src/assets/js/hamburger.js"></script>
+    <script defer src="../assets/js/acordeon.js"></script>
+    <script defer src="../assets/js/acessibilidade.js"></script>
+    <script defer src="../assets/js/darkmode.js"></script>
+    <script defer src="../assets/js/tamanho-fonte.js"></script>
+    <script defer src="../assets/js/leitor.js"></script>
+
+</head>
+
+<body>
+
+    <!--Inicio parte superior da página-->
+    <header>
+        <a href="./principal-page.html">
+            <img class="logo" src="../assets/Icones_projeto/24.svg" alt="logo aqui">
+        </a>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="sobre-nos.html">Quem Somos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a id="Entrar" href="../html/login.html">Entrar</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="nav-direita">
+            <ul class="nav-list-direita">
+                <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                        <img class="img-accessibilidade" src="../assets/Icones_projeto/14.png" alt="Acessibilidade">
+                    </button></li>
+                <button class="hamburger">
+                    <img class="img-hamburger" src="../assets/Icones_projeto/12.png" alt="">
+                </button>
+            </ul>
+        </div>
+
+    </header>
+    <!--Fim parte superior da página-->
+
+    <!--------------------------Começo Menu flutuante------------------->
+
+    <span class="menu-acessibilidade">
+        <div class="botoes-acessibilidade-menu">
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">MODO ESCURO</div>
+                <div class="btn-modo-dark">
+                    <input type="checkbox" name="darkmode" id="darkmode">
+                    <label id="darktg" for="darkmode"></label>
+                </div>
+            </div>
+
+
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">NARRADOR DE TEXTO</div>
+                <div class="btn-aumentar-texto">
+                    <input type="checkbox" name="narrador" id="narrador">
+                    <label id="narradortg" for="narrador"></label>
+                </div>
+            </div>
+
+
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">AUMENTAR TEXTO</div>
+                <div class="btn-narrador-de-texto">
+                    <input type="checkbox" name="aumentar-texto" id="slider-texto">
+                    <label id="slidertextortg" for="slider-texto"></label>
+                </div>
+            </div>
+
+        </div>
+    </span>
+    <input type="range" id="tamanhoTexto" min="16" max="32" value="16">
+    <!-----------------------------Fim menu flutuante--------------------->
+
+
+    <!-----------------------------Aumentar texto flutuante--------------------->
+
+
+    <!-----------------------------Aumentar texto flutuante--------------------->
+
+
+    <!------------------------------Começo banner------------------------->
+    <section class="banner">
+        <div class="container-banner">
+            <div class="seja-bem-vindo-banner">
+                <img src="../assets/Icones_projeto/25.png" alt="">
+            </div>
+
+            <div class="logo-banner">
+                <img id="img-logo-banner" src="../assets/imagem_cadastro/24.png" alt="">
+            </div>
+
+            <div class="background-info-banner">
+                <p class="texto-banner">
+                    Um guia completo para acompanhantes de pacientes , com informações sobre equipamentos de proteção
+                    individual (EPIs) e medidas de segurança para prevenir contaminações no ambiente hospitalar.
+                </p>
+            </div>
+        </div>
+
+    </section>
+    <!-------------------------Termino banner------------------------------->
+
+    <!-------------------------Acordeon------------------------------->
+
+    <section class="sec-menu-content">
+        <section class='botoes-acordeon'>
+            <button class='btn-menu'>Higienização</button>
+            <button class='btn-menu'>Contaminação</button>
+            <button class='btn-menu'>Proteção</button>
+            <button class='btn-menu'>Leia também </button>
+        </section>
+
+
+        <div class="container-content" id="button-1">
+            <div class="menu-content">
+
+                <div class="menu-item" data-reading="false">
+                    <button class="ler-botao-1"></button>
+
+                    <h2>Higienização no Ambiente Hospitalar: Guia Completo para Acompanhantes</h2>
+                    <p>A presença de acompanhantes em ambientes hospitalares é fundamental para o bem-estar dos
+                        pacientes,
+                        proporcionando apoio emocional e contribuindo para o processo de recuperação.
+                        No entanto, é crucial que esses indivíduos estejam cientes da importância da higienização para
+                        garantir a segurança de todos.
+                    </p>
+
+
+                </div>
+                <div class="menu-item">
+                    <h2>Por que a higienização é importante nos hospitais?</h2>
+                    <p>
+                        Prevenir infecções: Hospitais são ambientes propensos à proliferação de microrganismos que podem
+                        causar infecções em pacientes com sistema imunológico fragilizado. <br>
+                        A higienização adequada é essencial para romper a cadeia de transmissão e proteger a saúde de
+                        todos. <br>
+                        Promover a recuperação dos pacientes: Um ambiente limpo e livre de microrganismos contribui para
+                        o processo de recuperação dos pacientes, reduzindo o risco de complicações e infecções.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="container-content" id="button-2">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <h2>Combata a Contaminação no Hospital: Guia Completo para Acompanhantes</h2>
+
+                    <p>A segurança no ambiente hospitalar é uma responsabilidade de todos.
+                        Acompanhantes de pacientes desempenham um papel crucial nesse cenário,
+                        pois podem contribuir significativamente para a prevenção e o controle de infecções.</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Este guia completo apresenta as medidas essenciais para que você, como acompanhante,
+                        possa auxiliar no combate à contaminação dentro do hospital e garantir a saúde de todos:</h2>
+                    <p>
+                    <p>
+                        1. Higienização das Mãos: Ação Fundamental
+
+                        Lave as mãos com frequência: Utilize água e sabão por pelo menos 20 segundos, esfregando todas
+                        as áreas das mãos e unhas. Faça isso:
+                        Ao entrar e sair do quarto do paciente;
+                        Antes e depois de tocar no paciente;
+                        Após usar o banheiro;
+                        Ao tocar em superfícies como mesas, maçanetas e telefones.
+                        Use álcool em gel: Quando água e sabão não estiverem disponíveis, utilize álcool em gel com
+                        concentração mínima de 70%. Aplique o produto nas mãos e esfregue-as até que seque
+                        completamente.
+                    </p>
+                    <p>
+                        2. Proteção Extra: Utilize Máscaras
+
+                        Siga as orientações da equipe hospitalar: Em alguns casos, o uso de máscara pode ser necessário
+                        para proteger o paciente e outras pessoas de germes respiratórios. Use a máscara da maneira
+                        correta, cobrindo o nariz e a boca completamente.
+                        Descarte as máscaras com segurança: Após o uso, descarte as máscaras em lixeiras específicas
+                        para material biológico.
+                    </p>
+                    <p>
+                        3. Mantenha o Quarto do Paciente Organizado e Limpo
+
+
+                        Limpe superfícies frequentemente: Limpe com frequência superfícies como mesas de cabeceira,
+                        maçanetas, controles remotos e telefones com desinfetante recomendado pela equipe hospitalar.
+                        Descarte o lixo em lixeiras apropriadas: Utilize lixeiras com tampa para descartar lixo
+                        hospitalar e materiais descartáveis.
+                        Evite acúmulo de objetos: Mantenha o quarto organizado e evite o acúmulo de objetos
+                        desnecessários que possam dificultar a limpeza e proliferar microrganismos.
+                    </p>
+                    <p>
+                        4. Adote Hábitos Seguros para Evitar a Transmissão de Germes
+
+                        Evite tocar o rosto: Mãos sujas podem facilmente transferir germes para os olhos, nariz e boca,
+                        aumentando o risco de infecções.
+                        Mantenha as unhas curtas e limpas: Unhas longas acumulam mais sujeira e facilitam a proliferação
+                        de microrganismos.
+                        Evite contato com pacientes com doenças contagiosas: Se você estiver doente, evite visitar o
+                        paciente no hospital para prevenir a transmissão de doenças.
+                        Respeite o descanso do paciente: Mantenha o silêncio e evite fazer barulho no quarto do paciente
+                        para que ele possa descansar e se recuperar.
+                        Siga as instruções da equipe hospitalar: A equipe hospitalar está sempre disponível para
+                        orientar e esclarecer dúvidas sobre medidas de segurança e higiene. Siga todas as instruções
+                        para garantir a segurança de todos.
+                    </p>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container-content" id="button-3">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <h2>Proteção no Ambiente Hospitalar: Escudo Contra Infecções e Riscos</h2>
+                    <p>
+                        O ambiente hospitalar, por sua natureza, apresenta diversos riscos à saúde de pacientes,
+                        acompanhantes e profissionais da saúde.
+                        É crucial que todos os envolvidos estejam comprometidos com a segurança e a prevenção para
+                        garantir um ambiente propício à recuperação e ao bem-estar de todos.
+                    </p>
+                </div>
+                <!-- <div class="menu-item">
+                    <h2>Título do Menu</h2>
+                    <p>Descrição do menu</p>
+                </div>
+                <div class="menu-item">
+                    <h2>Título do Menu</h2>
+                    <p>Descrição do menu</p>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="container-content" id="button-4">
+            <div class="menu-content">
+                <div class="menu-item">
+                    <h2>saiba mais</h2>
+                    <p>meia noite eu te conto</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------------acordeon-------------------------------------->
+
+
+    <!---------------------------------Inicio parte principal da página------------------------------->
+    <main id="pagina-principal">
+
+        <section class='section-bemVindo'>
+            <div class="title-bemVindo">
+                <p>
+                    Seja bem-vindo ao <br>
+                    <span> Meu Acompanhante <span id="span-seguro"> Seguro </span> </span>
+                    <br>
+                </p>
+            </div>
+            <br><br>
+
+            <div class='content'>
+                <div class='box-imagem'>
+                    <img src="../assets/Icones_projeto/26.png" alt="texto_alternativo">
+                </div>
+
+                <div class='box-texto'>
+                    <p>
+                        Este site foi criado para te auxiliar durante a internação de seu ente querido no hospital,
+                        fornecendo informações valiosas sobre como se proteger e proteger seus familiares de infecções e
+                        doenças.
+                    </p>
+                </div>
+            </div>
+
+            <div class='content' id="mid-content">
+                <div class='box-texto' id="mid-box-texto">
+                    <p>
+                        Aqui você encontrará tudo o que precisa saber sobre o uso correto de equipamentos de proteção
+                        individual (EPIs), como máscaras, luvas e aventais, além de dicas valiosas sobre higiene pessoal
+                        e
+                        medidas de segurança para prevenir contaminações no ambiente hospitalar.
+                    </p>
+                </div>
+
+                <div class='box-imagem'>
+                    <img src="../assets/Icones_projeto/27.png" alt="texto_alternativo">
+                </div>
+            </div>
+
+
+            <div class='content'>
+                <div class='box-imagem'>
+                    <img src="../assets/Icones_projeto/28.png" alt="texto_alternativo">
+                </div>
+
+                <div class='box-texto'>
+                    <p>
+                        Nosso objetivo é tornar a experiência de acompanhante mais segura e tranquila para você e para
+                        todos
+                        ao seu redor. Navegue pelo nosso site e encontre as informações que você precisa para se manter
+                        protegido e apoiar seu ente querido durante esse momento importante.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!---------------------------------Termino parte principal da página------------------------------->
+
+
+        <!------------------------------------Inicio Destaque---------------------------------------------->
+
+        <section class="destaques">
+            <script src="/assets/imagens/mao-com-sabao.png"
+                integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+                crossorigin="anonymous"></script>
+            <div class="nomedistaque">
+                <h1 class="destaques">
+                    DESTAQUES
+                </h1>
+            </div>
+
+            <div id="alinhamento-destaque">
+                <div class="Banner-destaque">
+                    <img class="imgdest" src="/src/assets/Imagens_projeto/2.png" alt="#" title="#">
+                    <div class="txt-banner">
+                        <h2 class="h2-destaque">Acompanhante Seguro</h2>
+                        <p class="p-destaque"> Entenda como se previnir de contaminações</p>
+                    </div>
+                </div>
+
+                <div class="Banner-destaque">
+                    <img class="imgdest" src="/src/assets/Imagens_projeto/1.png" alt="#" title="#">
+                    <div class="txt-banner">
+                        <h2>O jeito certo de lavar as mãos</h2>
+                        <p>Veja o passo-a-passo para lavar as mãos corretamente</p>
+                    </div>
+                </div>
+
+                <div id="container-carrosel">
+                    <div id="carrosel-destaque">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="/src/assets/Imagens_projeto/1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption">
+                                        <h5>Acompanhante Seguro</h5>
+                                        <p>Entenda como se previnir de contaminações.</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/src/assets/Imagens_projeto/1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption">
+                                        <h5>O jeito certo de lavar as mãos</h5>
+                                        <p>Veja o passo-a-passo para lavar as mãos corretamente</p>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="/src/assets/Imagens_projeto/1.png" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption">
+                                        <h5>Negligência no uso de EPIs</h5>
+                                        <p>Entenda a importância dos equipamentos de proteção individual.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!------------------------------------Termino Destaque---------------------------------------------->
+    </main>
+    <!--Botão do trilho-->
+
+
+
+</body>
+<!------------------------------------Inicio rodape---------------------------------------------->
+<footer>
+    <div id="sobre">
+        <h2>Sobre o projeto</h2>
+        <p>Projeto feito em parceria com o Hospital Dr. José Pedro Bezerra - Santa Catarina - Natal</p>
+    </div>
+
+    <div id="senac-logo">
+        <a target="_blank" href="https://www.rn.senac.br/">
+        <img src="../assets/Icones_projeto/Senac_logo.png" alt="">
+    </a>
+
+        <p>Tv. Macaé, 2875 - Potengi, Natal - RN, 59110-185</p>
+    </div>
+
+    <p id="parceria">Em parceria com:</p>
+    <div id="hospital">
+        <h2>Hospital Dr. José Pedro Bezerra - Santa Catarina</h2>
+        <p>Rua Araquari, S/N – Conjunto Santa Catarina – Potengi – Natal / RN</p>
+    </div>
+
+
+    <div id="devs">
+        <div id="titulo-devs">
+            <h2>Desenvolvedores</h2>
+        </div>
+        
+        <div id="conteudo-contato-git">
+            <a target="_blank" href="https://github.com/lucasilvafe"><img src="../assets/Icones_projeto/github.png" alt="github-page" title="Lucas">
+                <p>Lucas</p>
+            </a>
+
+            <a target="_blank" href="https://github.com/matheus-fernandes-ferreira"><img src="../assets/Icones_projeto/github.png" alt="github-page" title="Matheus">
+                <p>Matheus</p>
+            </a>
+
+            <a target="_blank" href="https://github.com/diegodonascimentoconfessor"><img src="../assets/Icones_projeto/github.png" alt="github-page" title="Diego">
+                <p>Diego</p>
+            </a>
+
+            <a target="_blank" href="https://github.com/Roggefrr"><img src="../assets/Icones_projeto/github.png" alt="github-page" title="Rodolfo">
+                <p>Rodolfo</p>
+            </a>
+
+            <a target="_blank" href="https://github.com/mariaeduanea"><img src="../assets/Icones_projeto/github.png" alt="github-page" title="Eduanea">
+                <p>Eduanea</p>
+            </a>
+        </div>
+    </div>
+    
+</footer>
+<!------------------------------------Termino rodape---------------------------------------------->
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/Style-login.css">
+    <script defer src="../assets/js/hamburger.js"></script>
+    <script defer src="../assets/js/acessibilidade.js"></script>
+    <script defer src="../assets/js/darkmode.js"></script>
+    <script defer src="../assets/js/tamanho-fonte.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <!--Inicio parte superior da página-->
+    <header>
+        <a href="./principal-page.html">
+            <img class="logo" src="../assets/Icones_projeto/24.svg" alt="logo aqui">
+        </a></li>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="../html/principal-page.html">Inicio</a></li>
+                <li><a href="sobre-nos.html">Quem Somos</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Contato</a></li>
+                <li><a id="Entrar" href="../html/login.html">Entrar</a></li>
+            </ul>
+            </nav>
+
+
+
+            <div class="nav-direita">
+                <ul class="nav-list-direita">
+                    <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                            <img class="img-accessibilidade" src="../assets/Icones_projeto/14.png"
+                                alt="Acessibilidade">
+                        </button></li>
+                    <button class="hamburger">
+                        <img class="img-hamburger" src="../assets/Icones_projeto/12.png" alt="">
+                    </button>
+                </ul>
+            </div>
+
+    </header>
+    <!--Fim parte superior da página-->
+
+    <!--------------------------Começo Menu flutuante------------------->
+
+    <span class="menu-acessibilidade">
+        <div class="botoes-acessibilidade-menu">
+
+            <div class="txtbtn1">
+                <div class="txtmodoesc">MODO ESCURO</div>
+                <div class="btn-modo-dark">
+                    <input type="checkbox" name="darkmode" id="darkmode">
+                    <label id="darktg" for="darkmode"></label>
+                </div>
+
+            </div>
+
+
+        </div>
+    </span>
+    <input type="range" id="tamanhoTexto" min="10" max="32" value="16">
+    <!-----------------------------Fim menu flutuante--------------------->
+
+    
+    
+
+
+
+
+    <section class="container-login">
+        <div class="box-img">
+            <h1>Área do <br> <span> Administrador</span></h1>
+
+        </div>
+        <div class="box-side-bar">
+
+            
+        </div>
+        <div class="box-login">
+            <h1>Entrar</h1>
+
+            <div class="container-credenciais">
+                <form class='box-form' action="#" method="post">
+                    <div class="input-group">
+                        <label for="username" class="label-login"></label> <br>
+                        <input type="text" placeholder="E-mail, matrícula" id="username" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password" class="label-login"></label><br>
+                        <input type="password" placeholder="Digite sua senha" id="password" name="password" required>
+                    </div>
+
+
+                    </button>
+                    <div class="box-btn">
+                        <button type="submit" id="btn-entrar">
+
+                        </button>
+                    </div>
+                </form>
+
+                <div>   
+                    <h2> 
+                        <a class="abutton-login"  href="../html/cadastro.html">
+                        Cadastre-se
+                        </a>
+                    </h2>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
