@@ -621,7 +621,7 @@ html {
 
 /* ================================================================================== */
 
-@media only screen and (max-width: 360px),(max-height: 800px){
+@media (min-width: 360px) and (max-width: 420px){
     body
     {
         width: 100%;
@@ -694,7 +694,7 @@ html {
         display: flex;
         flex-direction: column;
         right: 0px;
-        top: 10.2%;
+        top: 11.8%;
         width: 200px;
         height: 350px;
         background: #1C486F;
@@ -702,10 +702,14 @@ html {
         transition: 0.5s ease-in-out;
         padding: 5%;
         flex-direction: column;
-        pointer-events: none;
         border-bottom-left-radius: 25px;
-        gap: 50px;
+        gap: 40px;
+        margin: 0;
         z-index: 2;
+    }
+
+    .dark-mode .nav-list {
+        background-color: #000000;
     }
 
     .nav {
@@ -716,7 +720,7 @@ html {
     }
 
     .nav-list li {
-        width: 190px;
+        width: 150px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -754,13 +758,12 @@ html {
     }
 
     .nav.active .nav-list {
-        clip-path: circle(850px at 90% -15%);
+        clip-path: circle(490px at 90% -15%);
     }
 
     .nav.active .nav-list a {
         opacity: 1;
     }
-
     /*Fim Hamburger*/
 
 

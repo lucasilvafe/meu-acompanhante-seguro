@@ -715,7 +715,7 @@ main {
 /*Botao de ativar slider texto*/
 
 
-@media only screen and (max-width: 320px) {
+@media (min-width: 360px) and (max-width: 420px) {
 
   .nav-list {
     display: none;
