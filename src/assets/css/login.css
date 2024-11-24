@@ -22,6 +22,7 @@ body {
 
 header {
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     background-color: #1C486F;
@@ -488,12 +489,13 @@ html {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 90vh;
+    margin-top: 90px;
+    height: 100vh;
 }
 
 .box-img {
     width: 70vw;
-    height: 90.6vh;
+    height: 100%;
     display: flex;
     background-image: linear-gradient(rgba(28, 72, 111, 0.8), rgba(28, 72, 111, 0.8)), url(../Imagens_projeto/2.png);
     background-position: initial;
@@ -517,7 +519,7 @@ html {
 
 .box-side-bar {
     width: 30%;
-    height: 90.6vh;
+    height: 100%;
     background-color: #FFBD59;
 }
 

@@ -8,7 +8,7 @@
     <title>Meu Acommpanhante Seguro</title>
 
 
-    <link rel="stylesheet" href="../assets/css/page-style.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -32,35 +32,34 @@
 
     <!--Inicio parte superior da página-->
     <header>
-        <a href="./principal-page.html">
-            <img class="logo" src="../assets/Icones_projeto/24.svg" alt="logo aqui">
-        </a>
+        
         <nav class="nav">
+            <a href="./home.html">
+                <img class="logo" src="../assets/Icones_projeto/24.svg" alt="logo aqui">
+            </a>
             <ul class="nav-list">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="sobre-nos.html">Quem Somos</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="sobre.html">Quem Somos</a></li>
+                <li><a href="">Notícias</a></li>
+                <li><a href="">Contato</a></li>
                 <li><a id="Entrar" href="../html/login.html">Entrar</a></li>
             </ul>
+
+
+            <div class="nav-direita">
+                <ul class="nav-list-direita">
+                    <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
+                            <img class="img-accessibilidade" src="../assets/Icones_projeto/14.png"
+                                alt="Acessibilidade">
+                        </button></li>
+                    <button class="hamburger">
+                        <img class="img-hamburger" src="../assets/Icones_projeto/12.png" alt="">
+                    </button>
+                </ul>
+            </div>
         </nav>
-
-
-
-        <div class="nav-direita">
-            <ul class="nav-list-direita">
-                <li> <button class="btn-accessibilidade" title="Configurações de acessibilidade">
-                        <img class="img-accessibilidade" src="../assets/Icones_projeto/14.png" alt="Acessibilidade">
-                    </button></li>
-                <button class="hamburger">
-                    <img class="img-hamburger" src="../assets/Icones_projeto/12.png" alt="">
-                </button>
-            </ul>
-        </div>
 
     </header>
 
-    
     <div id="range-text-size">
         <div id="txt-A">
             <p>a-</p>
@@ -110,13 +109,6 @@
     
     <!-----------------------------Fim menu flutuante--------------------->
 
-
-    <!-----------------------------Aumentar texto flutuante--------------------->
-
-
-    <!-----------------------------Aumentar texto flutuante--------------------->
-
-
     <!------------------------------Começo banner------------------------->
     <section class="banner">
         <div class="container-banner">
@@ -152,35 +144,42 @@
 
         <div class="container-content" id="button-1">
             <div class="menu-content">
-
-                <div class="menu-item" data-reading="false">
-                    <button class="ler-botao-1"></button>
-
-                    <h2>Higienização no Ambiente Hospitalar: Guia Completo para Acompanhantes</h2>
+                <div class="menu-item">
+                    <span>
+                        <h2>Higienização no Ambiente Hospitalar: Guia Completo para Acompanhantes</h2>
                     <p>A presença de acompanhantes em ambientes hospitalares é fundamental para o bem-estar dos
                         pacientes,
                         proporcionando apoio emocional e contribuindo para o processo de recuperação.
                         No entanto, é crucial que esses indivíduos estejam cientes da importância da higienização para
                         garantir a segurança de todos.
                     </p>
-
-
+                    </span>
+                    <button class="read-button">
+                        <img src="../assets/Icones_projeto/alto-falante.png" alt="alto-falante" title="Ouvir">
+                    </button>
                 </div>
+                
+
                 <div class="menu-item">
-                    <h2>Por que a higienização é importante nos hospitais?</h2>
-                    <p>
-                        Prevenir infecções: Hospitais são ambientes propensos à proliferação de microrganismos que podem
-                        causar infecções em pacientes com sistema imunológico fragilizado. <br>
-                        A higienização adequada é essencial para romper a cadeia de transmissão e proteger a saúde de
-                        todos. <br>
-                        Promover a recuperação dos pacientes: Um ambiente limpo e livre de microrganismos contribui para
-                        o processo de recuperação dos pacientes, reduzindo o risco de complicações e infecções.
-                    </p>
+                    <span>
+                        <h2>Por que a higienização é importante nos hospitais?</h2>
+                        <p>
+                            Prevenir infecções: Hospitais são ambientes propensos à proliferação de microrganismos que podem
+                            causar infecções em pacientes com sistema imunológico fragilizado. <br>
+                            A higienização adequada é essencial para romper a cadeia de transmissão e proteger a saúde de
+                            todos. <br>
+                            Promover a recuperação dos pacientes: Um ambiente limpo e livre de microrganismos contribui para
+                            o processo de recuperação dos pacientes, reduzindo o risco de complicações e infecções.
+                        </p>
+                    </span>
+                    <button class="read-button">
+                        <img src="../assets/Icones_projeto/alto-falante.png" alt="alto-falante" title="Ouvir">
+                    </button>
                 </div>
+                
 
             </div>
         </div>
-
 
         <div class="container-content" id="button-2">
             <div class="menu-content">
@@ -243,9 +242,7 @@
                         orientar e esclarecer dúvidas sobre medidas de segurança e higiene. Siga todas as instruções
                         para garantir a segurança de todos.
                     </p>
-                    </p>
                 </div>
-
             </div>
         </div>
 
@@ -260,14 +257,6 @@
                         garantir um ambiente propício à recuperação e ao bem-estar de todos.
                     </p>
                 </div>
-                <!-- <div class="menu-item">
-                    <h2>Título do Menu</h2>
-                    <p>Descrição do menu</p>
-                </div>
-                <div class="menu-item">
-                    <h2>Título do Menu</h2>
-                    <p>Descrição do menu</p>
-                </div> -->
             </div>
         </div>
 
@@ -310,6 +299,9 @@
                         fornecendo informações valiosas sobre como se proteger e proteger seus familiares de infecções e
                         doenças.
                     </p>
+                    <button class="read-button">
+                        <img src="../assets/Icones_projeto/alto-falante.png" alt="alto-falante" title="Ouvir">
+                    </button>
                 </div>
             </div>
 
@@ -321,6 +313,9 @@
                         e
                         medidas de segurança para prevenir contaminações no ambiente hospitalar.
                     </p>
+                    <button class="read-button">
+                        <img src="../assets/Icones_projeto/alto-falante.png" alt="alto-falante" title="Ouvir">
+                    </button>
                 </div>
 
                 <div class='box-imagem'>
@@ -340,9 +335,12 @@
                         todos
                         ao seu redor. Navegue pelo nosso site e encontre as informações que você precisa para se manter
                         protegido e apoiar seu ente querido durante esse momento importante.
-
                     </p>
+                    <button class="read-button">
+                        <img src="../assets/Icones_projeto/alto-falante.png" alt="alto-falante" title="Ouvir">
+                    </button>
                 </div>
+                
             </div>
         </section>
         <!---------------------------------Termino parte principal da página------------------------------->
@@ -362,7 +360,7 @@
 
             <div id="alinhamento-destaque">
                 <div class="Banner-destaque">
-                    <img class="imgdest" src="/src/assets/Imagens_projeto/2.png" alt="#" title="#">
+                    <img class="imgdest" src="/src/assets/Imagens_projeto/2.2.png" alt="#" title="#">
                     <div class="txt-banner">
                         <h2 class="h2-destaque">Acompanhante Seguro</h2>
                         <p class="p-destaque"> Entenda como se previnir de contaminações</p>
@@ -370,7 +368,7 @@
                 </div>
 
                 <div class="Banner-destaque">
-                    <img class="imgdest" src="/src/assets/Imagens_projeto/1.png" alt="#" title="#">
+                    <img class="imgdest" src="/src/assets/Imagens_projeto/1.1.png" alt="#" title="#">
                     <div class="txt-banner">
                         <h2>O jeito certo de lavar as mãos</h2>
                         <p>Veja o passo-a-passo para lavar as mãos corretamente</p>
@@ -391,7 +389,7 @@
 
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="/src/assets/Imagens_projeto/1.png" class="d-block w-100" alt="...">
+                                    <img src="/src/assets/Imagens_projeto/7.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <h5>Acompanhante Seguro</h5>
                                         <p>Entenda como se previnir de contaminações.</p>
@@ -399,7 +397,7 @@
                                 </div>
 
                                 <div class="carousel-item">
-                                    <img src="/src/assets/Imagens_projeto/1.png" class="d-block w-100" alt="...">
+                                    <img src="/src/assets/Imagens_projeto/4.png" class="d-block w-100" alt="...">
                                     <div class="carousel-caption">
                                         <h5>O jeito certo de lavar as mãos</h5>
                                         <p>Veja o passo-a-passo para lavar as mãos corretamente</p>

@@ -10,10 +10,4 @@ acessibilidade.addEventListener("click", () =>
 acessibilidade.addEventListener("click", () =>
     botoes.classList.toggle("active"));
 
-function ola(){
-    console.log('Eu aumento o texto');
-}
-
-
-
 

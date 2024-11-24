@@ -7,6 +7,28 @@
 }
 
 /*Web*/
+.read-button{
+    border: none;
+    border-radius: 40px;
+    height: 50px;
+    width: 150px;
+    background-color: #FFBD59;
+}
+
+.read-button img{
+
+    height: 40px;
+    width: 40px;
+    
+}
+
+span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 h1 {
     font-weight: 600;
     font-style: normal;
@@ -78,35 +100,6 @@ div {
     background-color: #1C486F;
 }
 
-/* botao play  - por padrão ele não é exibido*/
-.ler-botao-1 {
-    box-sizing: border-box;
-    height: 74px;
-    border-color: transparent transparent transparent #202020;
-    transition: 100ms all ease;
-    will-change: border-width;
-    cursor: pointer;
-    border-style: solid;
-    border-width: 37px 0 37px 60px;
-    background-color: transparent;
-    display: none;
-}
-
-/* botão play quando clicado se torna visivel */
-.ler-botao-1.play {
-    display: block;
-}
-
-/* botao play quando for clicado  vira o stop*/
-.ler-botao-1.on {
-    width: 74px;
-    height: 74px;
-    border-style: solid;
-    border-width: 27px;
-    border-color: transparent;
-    background-color: #202020;
-    transition: 40ms;
-}
 
 body {
     display: flex;
@@ -135,13 +128,14 @@ html {
 
 header {
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
     background-color: #1C486F;
     width: 100%;
     height: 90px;
-    padding-inline: 2%;
-}
+    z-index: 10;
+  }
 
 .nav {
     display: flex;
@@ -310,7 +304,7 @@ header {
 
 .menu-acessibilidade.active {
     display: flex;
-    position: absolute;
+    position: fixed;
     align-items: center;
     justify-content: center;
     right: 1%;
@@ -321,6 +315,7 @@ header {
     border-radius: 5px;
     transition: 0.2s ease-in;
     pointer-events: none;
+    z-index: 2;
 }
 /*Fim Menu flutuante*/
 .hamburger {
@@ -334,7 +329,8 @@ header {
 .banner {
     display: flex;
     width: 100%;
-    height: 670px;
+    height: 710px;
+    margin-top: 90px;
     align-items: center;
     justify-content: center;
     background: url(../Imagens_projeto/6.svg) no-repeat center;
@@ -379,19 +375,17 @@ header {
     position: relative;
     align-items: center;
     background-color: #1C486F;
-    top: 0;
-    left: 0;
     width: 100%;
     z-index: 1;
+    font-family: "Chakra Petch", sans-serif;
 }
 
 
 .botoes-acordeon {
     width: 1440px;
-    height: 200px;
+    height: 130px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* Define 4 colunas de larguras iguais */
     gap: 0px;
 }
 
@@ -402,9 +396,7 @@ header {
 .btn-menu {
     border: none;
     background-color: #1C486F;
-    color: white;
-    border-right: 1px solid rgb(255, 255, 255);
-    border-left: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 32px;
     font-weight: 900;
@@ -654,7 +646,8 @@ body.dark-mode {
 .dark-mode .banner {
     display: flex;
     width: 100%;
-    height: 670px;
+    height: 710px;
+    margin-top: 90px;
     align-items: center;
     justify-content: center;
     background: linear-gradient(rgb(19, 41, 61), rgba(0, 0, 0, 0.9)), url("/src/assets/Imagens_projeto/6.svg") no-repeat center center;
@@ -756,11 +749,6 @@ footer img{
     justify-content: space-around;
 }
 
-#conteudo-contato-linkedin{
-    display: flex;
-    justify-content: space-around;
-}
-
 /*Botao darkmode*/
 #darkmode {
     width: 0;
@@ -774,10 +762,8 @@ footer img{
     height: 20px;
     position: relative;
     display: block;
-    background: #ebebeb;
+    background: #e9e9e9;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 1s;
 }
@@ -820,10 +806,8 @@ footer img{
     height: 20px;
     position: relative;
     display: block;
-    background: #bebebe;
+    background: #e9e9e9;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 1s;
 }
@@ -835,7 +819,7 @@ footer img{
     position: absolute;
     top: 3px;
     left: 3px;
-    background: linear-gradient(180deg, #270b63, #140634);
+    background: linear-gradient(180deg, #2758df, #a9a5b3);
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: 1s;
@@ -852,7 +836,7 @@ footer img{
 #narrador:checked+#narradortg:after {
     left: 47px;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #ffe159, #968434);
+    background: linear-gradient(180deg, #dba048, #ffc876);
     background-position: center center;
     background-size: cover;
 
@@ -891,10 +875,8 @@ footer img{
     height: 20px;
     position: relative;
     display: block;
-    background: #bebebe;
+    background: #e9e9e9;
     border-radius: 200px;
-    box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
-        inset 0px -5px 15px rgba(255, 255, 255, 0.4);
     cursor: pointer;
     transition: 1s;
     margin-bottom: 25px;
@@ -907,7 +889,7 @@ footer img{
     position: absolute;
     top: 3px;
     left: 3px;
-    background: linear-gradient(180deg, #270b63, #140634);
+    background: linear-gradient(180deg, #2758df, #a9a5b3);
     border-radius: 180px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     transition: 1s;
@@ -924,7 +906,7 @@ footer img{
 #slider-texto:checked+#slidertextortg:after {
     left: 47px;
     transform: translateX(-100%);
-    background: linear-gradient(180deg, #ffe159, #968434);
+    background: linear-gradient(180deg, #dba048, #ffc876);
     background-position: center center;
     background-size: cover;
 
@@ -2432,6 +2414,18 @@ footer img{
         border-radius: 3px;
         border: 1px solid #ffffff;
         background-color: #1C486F;
+    }
+
+    .nomedistaque{
+        margin-bottom: 0px;
+    }
+    
+    #alinhamento-destaque {
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 
     /*Começo rodape*/
